@@ -36,7 +36,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="@dimen/blocked_numbers_delete_icon_padding"
-            android:src="@drawable/ic_close_grey_24dp"
+            android:src="@drawable/ic_remove_blocked"
             android:layout_alignParentEnd="true"
             android:contentDescription="@string/delete_icon_description"
             android:background="?android:attr/selectableItemBackgroundBorderless" />

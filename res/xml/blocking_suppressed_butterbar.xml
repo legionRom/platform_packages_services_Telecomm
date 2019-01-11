@@ -18,8 +18,7 @@
  <RelativeLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/blocked_numbers_butter_bar_color">
+        android:layout_height="wrap_content">
 
     <ImageView
             android:id="@+id/icon"
@@ -64,10 +63,4 @@
             style="@style/BlockedNumbersButton"
             android:background="?android:attr/selectableItemBackgroundBorderless" />
 
-    <include
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/reenable_button"
-            android:layout_marginTop="@dimen/blocked_numbers_large_padding"
-            layout="@xml/layout_divider" />
 </RelativeLayout>
