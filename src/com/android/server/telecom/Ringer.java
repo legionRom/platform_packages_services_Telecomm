@@ -32,7 +32,9 @@ import android.media.Ringtone;
 import android.media.VolumeShaper;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.UserHandle;
 import android.os.Vibrator;
+import android.provider.Settings;
 
 import com.android.internal.annotations.VisibleForTesting;
 
@@ -509,7 +511,7 @@ public class Ringer {
                 Settings.System.FLASHLIGHT_ON_CALL_WAITING, 0, UserHandle.USER_CURRENT) == 1;
 
         if (mFlashOnCallWait) {
-            torchToggler.stop();
+            mBlinkActive = false;
         }
     }
 
